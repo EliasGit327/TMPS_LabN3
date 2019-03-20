@@ -44,12 +44,11 @@ Example:
 
 Example of code:
 ```
-    Observer.SubUser erwin = new Observer.SubUser(22, "Erwin", "01.02.1990", "Browser");
-
     ArrayList<Command.ExecCommand> commandArrayList = new ArrayList<>();
 
     commandArrayList.add(new Command.SubscribeCommand(0, "Johny", "01.02.1994", "Mobile App"));
     commandArrayList.add(new Command.SubscribeCommand(1, "Kate", "11.03.1992", "Mobile App"));
+    Observer.SubUser erwin = new Observer.SubUser(22, "Erwin", "01.02.1990", "Browser");
     commandArrayList.add(new Command.SubscribeCommand(erwin));
 
 
